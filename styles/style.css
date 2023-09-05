@@ -195,10 +195,11 @@ aside p {
 
 .main-content {
   width: 65%;
+  margin-bottom: 5rem;
 }
 
 .post-container {
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .comments {
@@ -226,6 +227,7 @@ aside p {
   border-radius: 50%;
 }
 .post-header span:nth-child(3) {
+  font-size: 12px;
   color: #a8a8a8;
 }
 
