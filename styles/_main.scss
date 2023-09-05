@@ -1,0 +1,35 @@
+main {
+  display: flex;
+  width: 540px;
+  flex-direction: column;
+  align-items: center;
+  flex: 6;
+}
+
+.main-pages {
+  width: 65%;
+  ul {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    text-decoration: none;
+
+    li:nth-child(2) {
+      color: $light-grey;
+    }
+  }
+}
+
+.main-stories {
+  display: flex;
+  width: 65%;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.main-layout {
+  display: flex;
+  margin-left: $sidebar-wide-width;
+}

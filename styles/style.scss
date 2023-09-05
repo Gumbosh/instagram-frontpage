@@ -1,0 +1,60 @@
+@import "variables";
+@import "sidebar";
+@import "stories";
+@import "main";
+@import "aside";
+@import "posts";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: $black;
+  font-family: $fonts;
+  color: $white;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+@media (max-width: 1919px) {
+  .sidebar {
+    width: $sidebar-medium-width;
+  }
+
+  .main-layout {
+    margin-left: $sidebar-medium-width;
+  }
+}
+
+@media (max-width: 1024px) {
+  aside {
+    display: none;
+  }
+
+  .main-layout {
+    margin-left: $sidebar-narrow-width;
+  }
+
+  main {
+    width: 80vw;
+    flex: 0;
+  }
+
+  .sidebar {
+    width: $sidebar-narrow-width;
+    span {
+      display: none;
+    }
+    .sidebar-logo-wide {
+      display: none;
+    }
+    .sidebar-logo-small {
+      display: block;
+    }
+  }
+}
