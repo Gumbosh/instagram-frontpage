@@ -40,9 +40,8 @@
 .post-icons {
   display: flex;
   justify-content: space-between;
-
+  margin: 0.5rem 0;
   div:nth-child(1) {
-    margin: 0.5rem 0;
     display: flex;
     gap: 0.5rem;
   }
